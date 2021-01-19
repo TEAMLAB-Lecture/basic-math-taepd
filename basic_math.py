@@ -5,7 +5,7 @@
 """
 여기서 간단한 수학을 하는 프로그램을 만들것입니다. 
 """
-
+from statistics import median
 
 def get_greatest(number_list):
     """
@@ -90,10 +90,11 @@ def get_median(number_list):
             >>> bm.get_median(number_list2)
             35.5
     """
-    number_list.sort()
-    l = len(number_list) // 2
-    if len(number_list) % 2 == 0:
-        median = (number_list[l-1] + number_list[l])/2
-    else:
-        median = number_list[l]
-    return median
+    # number_list.sort()
+    # l = len(number_list) // 2
+    # if len(number_list) % 2 == 0:
+    #     median = (number_list[l-1] + number_list[l])/2
+    # else:
+    #     median = number_list[l]
+    
+    return median(number_list)
